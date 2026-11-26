@@ -1,0 +1,976 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blueberryshop | Hama Beads feitos à mão</title>
+
+  <meta name="description" content="Conheça a Blueberryshop! Peças artesanais feitas com Hama Beads, cheias de cor, criatividade e carinho.">
+  <meta name="theme-color" content="#eaf1f8">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Blueberryshop | Hama Beads">
+  <meta property="og:description" content="Pequenas peças, grandes ideias. Conheça nosso catálogo de Hama Beads feitos à mão!">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="icon" type="image/png" href="imagens/logo.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+  <div class="wrap nav">
+
+    <a href="#inicio" class="brand">
+      <img src="imagens/logo.png" alt="Logo Blueberryshop" width="48" height="48">
+      <span>Blueberryshop</span>
+    </a>
+
+    <button class="menu-toggle"
+      id="menuToggle"
+      aria-expanded="false"
+      aria-controls="navlinks"
+      aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav class="navlinks" id="navlinks">
+      <a href="#inicio">Início</a>
+      <a href="#colecoes">Coleções</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+  </div>
+</header>
+
+<main>
+
+  <!-- INÍCIO -->
+
+  <section class="hero botanical" id="inicio">
+    <div class="wrap hero-grid">
+
+      <div class="hero-copy">
+
+        <span class="script-note">Feito com carinho</span>
+
+        <p class="eyebrow">Pequenas peças, grandes ideias</p>
+
+        <h1>Um mundo de criatividade em Hama Beads</h1>
+
+        <p>
+          Peças feitas à mão, cheias de cor e personalidade.
+          Encontre um mimo especial para você ou para alguém querido.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#catalogo" class="button button-primary">
+            Conheça nossos produtos
+          </a>
+
+          <a href="#contato" class="button button-secondary">
+            Fale com a gente
+          </a>
+        </div>
+
+      </div>
+
+      <div class="hero-art">
+        <img
+          src="imagens/logo.png"
+          alt="Identidade visual da Blueberryshop"
+          width="330"
+          height="330"
+          fetchpriority="high">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COLEÇÕES -->
+
+  <section class="collections" id="colecoes">
+    <div class="wrap">
+
+      <div class="section-heading">
+
+        <span class="script-note">Escolha sua coleção</span>
+
+        <h2>Um pouquinho de tudo</h2>
+
+        <p>
+          Cada peça é feita com cuidado para levar um toque de criatividade
+          ao seu dia.
+        </p>
+
+      </div>
+
+      <div class="collection-grid">
+
+        <button class="collection-card" data-filter="Chaveiros">
+
+          <div class="collection-image">
+            <img
+              src="imagens/chaveiros.jpeg"
+              alt="Coleção de chaveiros"
+              loading="lazy">
+          </div>
+
+          <h3>Chaveiros</h3>
+          <p>Pequenos detalhes para levar com você.</p>
+
+          <span class="collection-action">Ver coleção ↗</span>
+
+        </button>
+
+        <button class="collection-card" data-filter="Ímãs">
+
+          <div class="collection-image">
+            <img
+              src="imagens/Ímãs.jpeg"
+              alt="Coleção de ímãs"
+              loading="lazy">
+          </div>
+
+          <h3>Ímãs</h3>
+          <p>Um toque divertido para seus cantinhos.</p>
+
+          <span class="collection-action">Ver coleção ↗</span>
+
+        </button>
+
+        <button class="collection-card" data-filter="Outros">
+
+          <div class="collection-image">
+            <img
+              src="imagens/osso.jpeg"
+              alt="Coleção de outros produtos artesanais"
+              loading="lazy">
+          </div>
+
+          <h3>Outros</h3>
+          <p>Presilhas, marcadores de página, jogos e muito mais.</p>
+
+          <span class="collection-action">Ver coleção ↗</span>
+
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CATÁLOGO -->
+
+  <section class="catalog" id="catalogo">
+    <div class="wrap">
+
+      <div class="section-heading">
+
+        <span class="script-note">Feitos especialmente para você</span>
+
+        <h2>Conheça nossos produtos</h2>
+
+        <p>
+          Escolha sua peça favorita do nosso catálogo ou nos conte sua ideia
+          que iremos amar fazê-la!
+        </p>
+
+      </div>
+
+      <!-- FILTROS -->
+
+      <div class="filters" aria-label="Filtrar produtos">
+
+        <button class="filter active" data-filter="Todas" aria-pressed="true">
+          Todas
+        </button>
+
+        <button class="filter" data-filter="Chaveiros" aria-pressed="false">
+          Chaveiros
+        </button>
+
+        <button class="filter" data-filter="Ímãs" aria-pressed="false">
+          Ímãs
+        </button>
+
+        <button class="filter" data-filter="Outros" aria-pressed="false">
+          Outros
+        </button>
+
+      </div>
+
+      <div class="product-grid" id="productGrid">
+
+        <!-- CHAVEIROS -->
+
+        <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Flor Rosa"
+            data-description="Uma florzinha delicada e colorida."
+            aria-label="Ampliar foto de Flor Rosa">
+
+            <img src="imagens/flor-rosa.jpg" alt="Chaveiro de flor rosa" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Flor Rosa</h3>
+            <p>Uma florzinha delicada e colorida.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Leão"
+            data-description="Uma peça divertida e cheia de personalidade."
+            aria-label="Ampliar foto de Leão">
+
+            <img src="imagens/leao.jpg" alt="Chaveiro de leão" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Leão</h3>
+            <p>Uma peça divertida e cheia de personalidade.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Pintinho"
+            data-description="Um detalhe fofo para acompanhar você."
+            aria-label="Ampliar foto de Pintinho">
+
+            <img src="imagens/pintinho.jpg" alt="Chaveiro de pintinho" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Pintinho</h3>
+            <p>Um detalhe fofo para acompanhar você.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Cavalo"
+            data-description="Uma criação especial feita em miçangas."
+            aria-label="Ampliar foto de Cavalo">
+
+            <img src="imagens/cavalo.jpg" alt="Chaveiro de cavalo" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Cavalo</h3>
+            <p>Uma criação especial feita em miçangas.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Flor Roxa"
+            data-description="Uma peça super fofa de flor para decorar."
+            aria-label="Ampliar foto de Flor Roxa">
+
+            <img src="imagens/flor roxa.jpeg" alt="Chaveiro de flor roxa" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Flor roxa</h3>
+            <p>Uma peça super fofa de flor para decorar.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Pinkie Pie"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de Pinkie Pie">
+
+            <img src="imagens/pinkie pie.jpeg" alt="Chaveiro Pinkie Pie" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Pinkie Pie</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Banguela"
+            data-description="Um personagem super fofo."
+            aria-label="Ampliar foto de Banguela">
+
+            <img src="imagens/Banguela.jpg" alt="Chaveiro Banguela" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Banguela</h3>
+            <p>Um personagem super fofo.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="fúria da noite"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de fúria da noite">
+
+            <img src="imagens/fúria da noite.jpg" alt="Chaveiro fúria da noite" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>fúria da noite</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Noob"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de Noob">
+
+            <img src="imagens/noob.jpg" alt="Chaveiro noob" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Noob</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="girassol"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de girassol">
+
+            <img src="imagens/girassol.jpg" alt="Chaveiro girassol" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Girassol</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Rato"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de Rato">
+
+            <img src="imagens/rato.jpg" alt="Chaveiro rato" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Rato</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Creeper"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de Creeper">
+
+            <img src="imagens/creeper.jpg" alt="Chaveiro Creeper" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Creeper</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="dinossauro"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de dinossauro">
+
+            <img src="imagens/dinossauro.jpg" alt="Chaveiro dinossauro" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Dinossauro</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="Ladybug"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de Ladybug">
+
+            <img src="imagens/Ladybug.jpg" alt="Chaveiro Ladybug" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Ladybug</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="espada de diamante"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de espada de diamante">
+
+            <img src="imagens/espada de diamante.jpg" alt="Chaveiro espada de diamante" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Espada de Diamante</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="cowboy"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de cowboy">
+
+            <img src="imagens/cowboy.jpg" alt="Chaveiro cowboy" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Cowboy</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+ <article class="product" data-category="Chaveiros">
+
+          <button class="product-photo" data-zoom
+            data-name="coração homem-aranha"
+            data-description="Uma personagem cheia de alegria e cor."
+            aria-label="Ampliar foto de coração homem-aranha">
+
+            <img src="imagens/coração homem-aranha.jpg" alt="Chaveiro coração homem-aranha" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Chaveiro</span>
+            <h3>Coração Homem-Aranha</h3>
+            <p>Uma personagem cheia de alegria e cor.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+
+
+        <!-- ÍMÃS -->
+
+        <article class="product" data-category="Ímãs">
+
+          <button class="product-photo" data-zoom
+            data-name="Rabanete"
+            data-description="Uma pecinha diferente para decorar."
+            aria-label="Ampliar foto de rabanete">
+
+            <img src="imagens/beterraba.jpg" alt="Ímã de rabanete" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Ímã</span>
+            <h3>Rabanete</h3>
+            <p>Uma pecinha diferente para decorar.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Ímãs">
+
+          <button class="product-photo" data-zoom
+            data-name="Porco"
+            data-description="Um detalhe artesanal para seu espaço."
+            aria-label="Ampliar foto de Porco">
+
+            <img src="imagens/porco.jpg" alt="Ímã de porco" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Ímã</span>
+            <h3>Porco</h3>
+            <p>Um detalhe artesanal para seu espaço.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Ímãs">
+
+          <button class="product-photo" data-zoom
+            data-name="Maçã Verde"
+            data-description="Uma criação super fofa."
+            aria-label="Ampliar foto de maçã verde">
+
+            <img src="imagens/maça verde.png" alt="Ímã de maçã verde" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Ímã</span>
+            <h3>Maçã verde</h3>
+            <p>Uma criação super fofa.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Ímãs">
+
+          <button class="product-photo" data-zoom
+            data-name="Maçã Vermelha"
+            data-description="Uma peça simples, mas que faz toda a diferença no ambiente."
+            aria-label="Ampliar foto de maçã vermelha">
+
+            <img src="imagens/maça vermelha.png" alt="Ímã de maçã vermelha" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Ímã</span>
+            <h3>Maçã vermelha</h3>
+            <p>Uma peça simples, mas que faz toda a diferença no ambiente.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Ímãs">
+
+          <button class="product-photo" data-zoom
+            data-name="Vaca Roxa"
+            data-description="Uma peça super fofa para decorar a sua casa."
+            aria-label="Ampliar foto de Vaca Roxa">
+
+            <img src="imagens/vaca roxa.png" alt="Ímã de vaca roxa" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Ímã</span>
+            <h3>Vaca roxa</h3>
+            <p>Uma peça super fofa para decorar a sua casa.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <article class="product" data-category="Ímãs">
+
+          <button class="product-photo" data-zoom
+            data-name="Joaninha"
+            data-description="Uma joaninha feita com muito carinho."
+            aria-label="Ampliar foto de Joaninha">
+
+            <img src="imagens/joaninha.jpg" alt="Ímã de joaninha" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Ímã</span>
+            <h3>Joaninha</h3>
+            <p>Uma joaninha feita com muito carinho.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+        
+        <article class="product" data-category="Ímãs">
+
+          <button class="product-photo" data-zoom
+            data-name="Flor"
+            data-description="Uma florzinha para deixar tudo mais bonito."
+            aria-label="Ampliar foto de Flor">
+
+            <img src="imagens/flor branca.jpg" alt="Ímã de flor" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Ímã</span>
+            <h3>Flor</h3>
+            <p>Uma florzinha para deixar tudo mais bonito.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- OUTROS -->
+
+        <article class="product" data-category="Outros">
+
+          <button class="product-photo" data-zoom
+            data-name="Osso"
+            data-description="Uma ideia de presilha super diferente."
+            aria-label="Ampliar foto de Osso">
+
+            <img src="imagens/osso.jpeg" alt="Presilha de osso" loading="lazy">
+            <span class="zoom-hint">Ampliar foto</span>
+
+          </button>
+
+          <div class="product-info">
+            <span class="tag">Presilha</span>
+            <h3>Osso</h3>
+            <p>Uma ideia de presilha super diferente.</p>
+
+            <div class="product-bottom">
+              <span class="price">Consulte o preço</span>
+              <a class="interest" href="https://www.instagram.com/hamabeads_blueberry/" target="_blank" rel="noopener noreferrer">Consultar ↗</a>
+            </div>
+          </div>
+
+        </article>
+
+        <!-- FUTUROS PRODUTOS DE OUTROS PODEM SER ADICIONADOS AQUI -->
+
+      </div>
+
+      <p class="catalog-note">
+        Os produtos são feitos à mão e por encomenda.
+        Valores e disponibilidade podem ser consultados pelo Instagram.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+
+  <section class="about botanical" id="sobre">
+    <div class="wrap">
+
+      <div class="section-heading">
+        <span class="script-note">Um pouquinho da nossa história</span>
+        <h2>Sobre a Blueberryshop</h2>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-copy">
+
+          <span class="script-note">Criatividade em cada detalhe</span>
+
+          <p>
+            A Blueberryshop nasceu do carinho por criar.
+            Cada peça é montada com Hama Beads, transformando pequenas
+            miçangas em figuras cheias de cor e personalidade.
+          </p>
+
+          <p>
+            Nosso catálogo reúne opções feitas à mão para presentear,
+            colecionar ou deixar seu dia mais especial.
+          </p>
+
+        </div>
+
+        <div class="about-fact">
+
+          <h3>Feito à mão</h3>
+          <p>Cada peça é montada com cuidado, uma miçanga de cada vez.</p>
+
+          <h3>Peças criativas</h3>
+          <p>Cores, personagens e formatos para diferentes gostos.</p>
+
+          <h3>Por encomenda</h3>
+          <p>Consulte a disponibilidade e os detalhes pelo nosso Instagram.</p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+
+  <section class="contact" id="contato">
+    <div class="wrap contact-inner">
+
+      <span class="script-note">Vamos conversar?</span>
+
+      <h2>Gostou de alguma peça?</h2>
+
+      <p>
+        Para consultar valores, disponibilidade ou fazer uma encomenda,
+        entre em contato com a gente pelo Instagram.
+      </p>
+
+      <a
+        href="https://www.instagram.com/hamabeads_blueberry/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="instagram-link">
+        Conheça nosso Instagram ↗
+      </a>
+
+      <p class="contact-small">
+        Blueberryshop — criatividade feita à mão.
+      </p>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- VISUALIZAÇÃO AMPLIADA -->
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+
+  <div class="lightbox-content" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar imagem">
+      ×
+    </button>
+
+    <img src="" alt="" id="lightboxImage">
+
+    <div class="lightbox-info">
+      <h3 id="lightboxTitle"></h3>
+      <p id="lightboxDescription"></p>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- RODAPÉ -->
+
+<footer>
+  <div class="wrap footer-row">
+
+    <span class="footer-brand">Blueberryshop</span>
+
+    <span>Feito com carinho</span>
+
+    <span class="footer-script">Pequenas peças, grandes ideias</span>
+
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
